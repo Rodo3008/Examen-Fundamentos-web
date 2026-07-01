@@ -1,0 +1,184 @@
+/* Configuración inicial del viewport */
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+/* Término de la configuración del viewport */
+
+/* Inicio Propiedades del Body */
+
+html, body {
+    /* Para empujar el footer hacia abajo hacemos que el Body ocupe toda la altura de la ventana */
+    height: 100%; 
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    background-color: lightslategray;
+    /* Flexbox para empujar el footer hacia abajo */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/* Término de Propiedades del Body */
+
+/* Inicio Propiedades del Header */
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    background-color: #d5a6bd;
+    padding: 12px 8px;
+    font-size: 24px;
+    gap: 12px;
+}
+
+.header span {
+    font-weight: bold;
+    color: #fff;
+}
+
+.header > ul {
+    display: flex;
+    list-style: none;
+    gap: 12px;
+    font-weight: 700;
+    font-size: 32px
+    
+
+}
+
+.links {
+    display: flex;
+    gap: 28px;
+    color: black;
+    font-weight: bold;
+    font-size: 32px;
+    
+}
+
+.links > button {
+    background-color: #fff;
+    color: black;
+    border: 3px solid #000;
+    padding: 4px 8px;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-box-shadow: 10px 10px 0px -4px rgba(0,0,0,0.85);
+    -moz-box-shadow: 10px 10px 0px -4px rgba(0,0,0,0.85);
+    box-shadow: 10px 10px 0px -4px rgba(0,0,0,0.85);
+}
+/* Término de Propiedades del Header */
+
+/* Inicio de propiedades del Navigation */
+.navegacion {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #cccccc;
+    list-style: none;
+}
+/* Término de propiedades del Navigation */
+
+/* Inicio de propiedades del Main */
+main {
+    /* Con flez: 1, el main crece para ocupar todo el espacio disponible */
+    flex: 1;
+    padding: 20px;
+}
+/* Término de propiedades del Main */
+
+/* Inicio de propiedades flor del mes */
+.flor-del-mes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    width: auto;
+}
+/* Término de propiedades de Flor del mes */
+
+/* Inicio de propiedades de Resultados de busqueda */
+.resultados {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    font-size: 18px;
+    margin: 16px;
+}
+
+.resultados span {
+    font-weight: bold;
+}
+/* Término de propiedades de Resultados de busqueda */
+
+/* Inicio de propiedades de FLores */
+.flores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 16px;
+}
+
+/* Término de propiedades de FLores */
+.flor {
+    width: 310px;
+    background-color: lightgray;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.flor > img {
+    width: 280px;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+}
+
+.info h2 {
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.info button {
+    background-color: #d5a6bd;
+    color: white;
+    border: 3px solid #000;
+    padding: 4px 8px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    -webkit-box-shadow: 10px 10px 0px -4px rgba(0,0,0,0.85);
+    -moz-box-shadow: 10px 10px 0px -4px rgba(0,0,0,0.85);
+    box-shadow: 10px 10px 0px -4px rgba(0,0,0,0.85);
+}
+/* Término de propiedades de FLores */
+
+/* Inicio de Porpiedades del Footer */
+
+.footer {
+    Display: flex;
+    background-color: #d5a6bd;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    font-size: 18px;
+}
